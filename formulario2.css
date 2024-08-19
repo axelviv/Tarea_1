@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(41, 46, 95);
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 80vh;
+}
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form {
+    width: 400px;
+    background-color: rgb(57, 71, 85);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+}
+
+input[name="nombreUsuario"], input[name="passwordUsuario"], input[name="emailUsuario"], input[name="fechaNacimientoUsuario"] {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    height: 30px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+button {
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color:rgb(2, 156, 2);    
+}
+
+button[type="button"] {
+    background-color: rgb(1, 136, 146);
+}
+

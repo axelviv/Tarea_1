@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="css" rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <h1>Formulario</h1>
+
+    <form action="" method="">
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="nombreUsuario" required minlength="3" placeholder="Ingrese su nombre">
+        </div>
+        <div>
+            <label>Contraseña:</label>
+            <input type="password" name="passwordUsuario" required minlength="6" pattern="(?=.*[A-Z]).{6,}" placeholder="Ingrese una contraseña, min 6 caracteres y 1 mayuscula">
+        </div>
+        <div>
+            <label>Email:</label>
+            <input type="email" name="emailUsuario" required minlength="5" placeholder="Ingrese su dirección de email">
+        </div>
+        <div>
+            <label>Fecha de nacimiento:</label>
+            <input type="date" name="fechaNacimientoUsuario" required>
+        </div>
+
+        <div>
+            <label>Nacionalidad:</label>
+            <select name="nacionalidad" required>
+                <option value="" disabled selected>Seleccione su nacionalidad</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="estados Unidos">Estados Unidos</option>
+                <option value="españa">España</option>
+                <option value="Italia">Italia</option>
+            </select>
+        </div>
+
+        <div class="button-container">
+        <button type="submit">Enviar</button>
+        <button type="button" id="claro">Claro</button>
+        <button type="button" id="contraste">Contraste</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>    
+</body>
+</html>
